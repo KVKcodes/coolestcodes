@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var sure= false;
+
     var instagramElement = document.getElementById('instad');
     var homeElement = document.getElementById('homepage');
     var surabhigramElement = document.getElementById('surabhigram');
@@ -16,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var qrPageElement = document.getElementById('qr-code-page');
     var lastPaymentElement = document.getElementById('last-content');
     var finalLastButton = document.getElementById('final-next-button');
+    var finalgobackButton = document.getElementById('go-back-final');
+    var festsgobackButton = document.getElementById('go-back-fests');
 
     var instaHidden = document.createElement('style');
     var homeHidden = document.createElement('style');
@@ -53,10 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
     qrPageElement.style.display = 'none';
 
     homeClickElement.addEventListener('click', function (event) {
-        if(lastPaymentElement.style.display != 'none' || qrPageElement.style.display != 'none'
-         || festselection.style.display != 'none' || paymentPageElement.style.display != 'none')
+        if((lastPaymentElement.style.display != 'none' || qrPageElement.style.display != 'none'
+         || festselection.style.display != 'none' || paymentPageElement.style.display != 'none') && sure != true)
         {
             console.log("NUH UH");
+            alert("Are you sure do you want to go home?")
+            sure = true
         }
         else {
             homeElement.style.display = 'flex';
@@ -68,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             festselection.style.display = 'none';
             lastPaymentElement.style.display = 'none';
             qrPageElement.style.display = 'none';
+            sure = false
         }
     });
 
@@ -110,6 +117,16 @@ document.addEventListener('DOMContentLoaded', function () {
     qrPayButton.addEventListener('click', function(event) {
         qrPageElement.style.display = 'none';
         homeElement.style.display = 'flex'
+    });
+
+    finalgobackButton.addEventListener('click', function(event) {
+        festselection.style.display = 'block';
+        lastPaymentElement.style.display = 'none';
+    });
+
+    festsgobackButton.addEventListener('click', function(event) {
+        paymentPageElement.style.display = 'block';
+        festselection.style.display = 'none';
     });
 
     function renderCurrentTime() {

@@ -18,22 +18,27 @@
 
 #login-page {
 	width: 100%;
-	height: 100%;
 	display: grid;
 	place-content: center;
 	background: #1ed760;
 	overflow-x: hidden;
+	height: 100vh;
+    overflow-y: auto; 
 }
 
 #login-page section {
 	width: 100%;
-	height: 100%;
+	height: 140%;
 	padding: 15px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 	/* border-radius: 10px; */
 	background: #2c2d31;
-	overflow: hidden;
+	overflow: scroll;
 	position: relative;
+}
+
+#login-page::-webkit-scrollbar {
+	display: none;
 }
 
 #login-page #logo {
@@ -138,4 +143,13 @@
 
 #login-page a:hover {
 	opacity: 1;
+}
+
+/* #staySpan {
+	display: flex;
+} */
+
+#staySignedIn {
+	width: 10% !important;
+	margin: 0;
 }

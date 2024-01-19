@@ -825,42 +825,61 @@
               
               <div id="login-page">
                 
-<input type="radio" name="optionScreen" id="SignIn" hidden checked>
-<input type="radio" name="optionScreen" id="SignUp" hidden>
+              <input type="radio" name="optionScreen" id="SignIn" hidden checked>
+              <input type="radio" name="optionScreen" id="SignUp" hidden>
 
 
-      <section>
-        <div id="logo">
-          <img src="/Assets/favicon/surabhi.png" alt="Surabhi Logo" width="80">
-          <!-- <h1 style="">Surabhi</h1> -->
-        </div>
+                    <section>
+                      <div id="logo">
+                        <img src="/Assets/favicon/surabhi.png" alt="Surabhi Logo" width="80">
+                        <!-- <h1 style="">Surabhi</h1> -->
+                      </div>
 
-        <nav>
-          <label for="SignIn">Sign In</label>
-          <label for="SignUp">Sign Up</label>
-        </nav>
+                      <nav>
+                        <label for="SignIn">Sign In</label>
+                        <label for="SignUp">Sign Up</label>
+                      </nav>
 
-        <form action="" id="SignInFormData">
-          <input type="text" id="username" placeholder="Username">
-          <input type="password" id="password" placeholder="Password">
-          <span>
-            <input type="checkbox" id="staySignedIn" checked>
-            <label for="staySignedIn">Stay Signed In</label>
-          </span>
-          <button type="button" title="Sing In">Sign In</button>
+                      <form action="" id="SignInFormData">
+                         <input type="text" id="username" placeholder="Username">
+                        <input type="text" id="username" placeholder="Username">
+                        <input type="password" id="password" placeholder="Password">
+                        <span id="staySpan">
+                          <input type="checkbox" id="staySignedIn" checked>
+                          <label for="staySignedIn">Stay Signed In</label>
+                        </span>
+                        <button type="button" title="Sing In">Sign In</button>
 
-          <a id="forgotPassword">Forgot Your Password?</a>
-        </form>
+                        <a id="forgotPassword">Forgot Your Password?</a>
+                      </form>
 
-        <form action="" id="SignUpFormData">
-          <input type="text" id="name" placeholder="Full Name">
-          <input type="email" id=email placeholder="E-mail">
-          <input type="password" id="password" placeholder="New Password">
-          <button type="button" title="Sign Up">Sign Up</button>
-        </form>
+                      <form action="" id="SignUpFormData">
+                        <input type="text" id="institutionName" placeholder="Name Of Your Institution" required>
+                        <input type="text" id="fullname" placeholder="Full Name" required>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                        <input type="password" id=password placeholder="Set Password" required>
+                        <input type="number" id="idNum" placeholder="Enter ID Number" required>
+                        <span style="margin-bottom: 10px;">
+                          <label for="gender">Gender:</label>
+                          <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </span>
+                          <input type="number" id="ph-no" placeholder="Enter your mobile number" required>
+                          <input type="email" id="email" placeholder="Enter your mail ID" required>
+                          <input type="text" id="district" placeholder="Enter your District" required>
+                          <input type="text" id="state" placeholder="Enter your state" required>
+                          <input type="text" id="country" placeholder="Enter your country" required>
+                          <input type="text" id="referral" placeholder="Referral (optional)">
 
-      </section>
-</div>
+                          <button type="button" title="Sign Up">Sign Up</button>
+                      </span>
+                      </form>
+
+                    </section>
+              </div>
 
               <div id="payment-page">
                 <div id="main-content" style="display: none;">
@@ -904,7 +923,7 @@
                       </li>
                     </ul>
                   </div>
-                  <button id="register-next-button"><p>Fest Registration<span>&#x27BD;</span></p></button>
+                  <button class="payButton" id="register-next-button"><p>Fest Registration&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></button>
                 </div>
 
                 <div id="fest-selection-page" style="display: none">
@@ -1035,8 +1054,9 @@
                         
                       </ul>
                     </div>
+                    <div class="payButton" id="payment-next-button"><p>Proceed to checkout&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></div>
+                    <button class="gobackButton" id="go-back-fests"><p>Go back&nbsp;<!--<span>&#8656;</span>--></p></button>
                   </div>
-                  <div id="payment-next-button"><p>Proceed to checkout<span>&#x27BD;</span></p></div>
                 </div>
 
                 <div id="last-content" style="display: none;">
@@ -1077,8 +1097,9 @@
                         </ul>
                       </li>
                     </ul>
+                    <button class="payButton" id="final-next-button"><p>Finish registration&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></button>
+                    <button class="gobackButton" id="go-back-final"><p>Go back&nbsp;<!--<span>&#8656;</span>--></p></button>
                   </div>
-                  <button id="final-next-button"><p>Finish registration<span>&#x27BD;</span></p></button>
                 </div>
 
                 <div id="qr-code-page" style="display: none;">
@@ -1087,7 +1108,7 @@
                     <img id="qr-code" src="Assets/phone_apps/surabhi_better_qr.png" alt="qr-code" />
                     <span style="color: #3897f0; margin-left: 5%;">Your price: </span><span></span>
                   </div>
-                  <button id="qr-page-button"><p>Fest Registration<span>&#x27BD;</span></p></button>
+                  <button class="payButton" id="qr-page-button"><p>Fest Registration&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></button>
                 </div>
 
 

@@ -53,15 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
     qrPageElement.style.display = 'none';
 
     homeClickElement.addEventListener('click', function (event) {
-        homeElement.style.display = 'flex';
-        instagramElement.style.display = 'none';
-        paymentPageElement.style.display = 'none'
-        timerPageElement.style.display = 'none';
-        loginPageElement.style.display = 'none';
-        paymentPageElement.style.display = 'none';
-        festselection.style.display = 'none';
-        lastPaymentElement.style.display = 'none';
-        qrPageElement.style.display = 'none';
+        if(lastPaymentElement.style.display != 'none' || qrPageElement.style.display != 'none'
+         || festselection.style.display != 'none' || paymentPageElement.style.display != 'none')
+        {
+            console.log("NUH UH");
+        }
+        else {
+            homeElement.style.display = 'flex';
+            instagramElement.style.display = 'none';
+            paymentPageElement.style.display = 'none'
+            timerPageElement.style.display = 'none';
+            loginPageElement.style.display = 'none';
+            paymentPageElement.style.display = 'none';
+            festselection.style.display = 'none';
+            lastPaymentElement.style.display = 'none';
+            qrPageElement.style.display = 'none';
+        }
     });
 
     surabhigramElement.addEventListener('click', function (event) {

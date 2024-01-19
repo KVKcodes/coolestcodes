@@ -4,7 +4,7 @@
 
 #payment-page {
   width: 100%;
-  height: 100%;
+  height: 200%;
 }
 
 #payment-page * {
@@ -33,19 +33,18 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  overflow:scroll;
+  height: 200%;
+  overflow-y:scroll;
   padding: 0;
 }
-
 #payment-page #fest-selection {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 200%;
   padding: 0;
-  overflow:scroll;
+  overflow-y:scroll;
 }
 
 #payment-page #last-content {
@@ -53,9 +52,9 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 200%;
   padding: 0;
-  overflow:scroll;
+  overflow-y:scroll;
 }
 
 #payment-page #qr-code-page {
@@ -63,9 +62,9 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 200%;
   padding: 0;
-  overflow:scroll;
+  overflow-y:scroll;
 }
 
 /* #payment-page .paper {
@@ -146,8 +145,8 @@
 #register-next-button {
   position:absolute;
   width: 100%;
-  height: 10%;
-  bottom: 0;
+  height: 5%;
+  bottom: 50%;
 	background: #1ed760;
 	cursor: pointer;
   color: #111;
@@ -182,15 +181,6 @@
   text-align: start;
 }
 
-#payment-page #fest-selection {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  padding: 0;
-}
-
 .selector {
   margin-top: 10%;
   margin-left: 10%;
@@ -206,8 +196,8 @@
 #payment-next-button {
   position: absolute;
   width: 100%;
-  height: 10%;
-  bottom: 0;
+  height: 5%;
+  bottom: 50%;
 	background: #1ed760;
 	cursor: pointer;
   color: #111;
@@ -217,13 +207,14 @@
 	font-size: 16px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-top: #111 solid 0.1rem;
+  left: 0;
 }
 
 #final-next-button {
   position: absolute;
   width: 100%;
-  height: 10%;
-  bottom: 0;
+  height: 5%;
+  bottom: 50%;
 	background: #1ed760;
 	cursor: pointer;
   color: #111;
@@ -240,8 +231,8 @@
 #qr-page-button {
   position: absolute;
   width: 100%;
-  height: 10%;
-  bottom: 0;
+  height: 5%;
+  bottom: 50%;
 	background: #1ed760;
 	cursor: pointer;
   color: #111;

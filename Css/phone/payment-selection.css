@@ -18,7 +18,7 @@
   content: '\21A6'; /* Unicode character for right arrow */
   margin-right: 5px;
   color: fuchsia;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @font-face {
@@ -274,3 +274,22 @@ li.greyout label{
   list-style: disc; /* or list-style: circle; or list-style: square; */
 }
 
+.gradient-overlay {
+  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+  background-size: 180% 180%;
+  -webkit-background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient */
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

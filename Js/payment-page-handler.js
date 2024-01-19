@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener('change', function (event) {
+    var festOptions = document.getElementsByName('planOption');
+    for (var i = 0; i < festOptions.length; i++) {
+        if (festOptions[i].checked) {
+            selectedOption = festOptions[i].value;
+            break;
+        }
+    }
+    var price = selectedOption
+    var priceSpan= document.getElementById('price');
+    priceSpan.textContent= ""+price;
+
     const target = event.target;
 
     if (target.type === 'radio') {

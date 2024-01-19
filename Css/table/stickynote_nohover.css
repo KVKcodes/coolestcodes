@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+.contaner {
+  overflow: hidden;
+  position: absolute;
+  bottom: 290px;
+  right: 30%;
+  width: 350px;
+  height: 100%;
+  transition: bottom 5s;
+  font-family: 'Handlee', cursive, sans-serif;
+  /* changed z to -500, now sticky's at the bottom */
+  z-index: -500;
+}
+
+
+.contaner-important {
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 350px;
+  height: 350px;
+  transition: width 0.4s, height 0.4s;
+  font-family: 'Handlee', cursive, sans-serif;
+}
+
+.contaner-important.closed {
+  height: 50px;
+  width: 50px;
+  transition: width 0.4s, height 0.4s;
+}
+
+.contaner-important.closed:active {
+  height: 350px;
+  width: 350px;
+}
+
+.toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* 
+.contaner:hover {
+  z-index: 1000000000 !important;
+} */
+
+
+.sticky-note {
+  width: 300px;
+  min-height: 300px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline: none;
+  position: relative;
+  margin-right: 10%;
+  padding-top: 40px;
+  content: "";
+  display: block;
+}
+
+h3 {
+  margin-top: -25px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.sticky-note.sticky-note-one {
+  background-color: #fae3e3;
+  grid-area: sticker1;
+  box-shadow: -9px -9px 0px rgba(0, 0, 0, 0.42);
+}
+
+.sticky-note.sticky-note-one::before {
+  background-color: #fae3e3;
+  width: 120px;
+  height: 35px;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%) rotate(3deg);
+}
+
+.sticky-note.sticky-note-one::after {
+  left: 0;
+  border-top-color: #51c0ef;
+  border-right-color: #51c0ef;
+  border-bottom-color: #5d576b;
+  border-left-color: #5d576b;
+}
+
+
+
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 30;
+  margin: 0;
+  text-align: left;
+}
+
+.task-list li {
+  background-color: #fae3e3;
+  /* border: 2px solid #0b0a0a;
+    margin-bottom: 5px; */
+  margin-left: 30px;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+
+}
+
+.task-list li input[type="checkbox"] {
+  margin-right: 10px;
+  scale: 1.20;
+  padding-right: 2rem;
+}

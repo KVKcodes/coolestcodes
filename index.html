@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>KL Surabhi 2024</title>
+  <link rel="stylesheet" href="Css/phone/phone.css" />
+  <link rel="stylesheet" href="./Css/style.css" />
+  <link rel="stylesheet" href="Css/phone/screener.css">
+  <link rel="stylesheet" href="Css/table/stickynote_nohover.css" />
+  <link rel="stylesheet" href="Css/phone/login_app.css" />
+  <link rel="stylesheet" href="Css/phone/payment-dog-animation.css">
+  <link rel="stylesheet" href="Css/phone/payment-selection.css">
+  <link rel="stylesheet" href="Css/media-queries.css">
+  <link rel="icon" type="image/x-icon" href="Assets/favicon/favicon.ico" />
+  <link rel="import" href="Js/template.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <!-- Audio Stuff -->
+  <!-- It's getting called for every page. -->
+  <!-- Book -->
+  <audio id="penmove" src="/Assets/audio/pen/dropping_pen.mp3"></audio>
+  <script src="/Js/audio/audio_pen.js"></script>
+
+  <!-- Pen -->
+  <audio id="pageflip" src="/Assets/audio/book/page-flip-2sec.mp3"></audio>
+  <script src="/Js/audio/audio_book.js"></script>
+
+  <!-- App -->
+  <audio id="phoneappclick" src="/Assets/audio/app/app_sound_bloop.mp3"></audio>
+  <audio id="homebuttonclick" src="/Assets/audio/app/home_button.mp3"></audio>
+  <script src="/Js/audio/audio_app.js"></script>
+  <!-- End of Audio Stuff -->
+
+  <script src="/Js/phoner.js"></script>
+  <h1 id="timer"></h1>
+  <div class="totalitarianism">
+    <div class="v-center"></div>
+    <div id="container">
+      <div class="table-contents">
+        <div class="book hide-on-mobile">
+          <div class="first paper">
+            <div class="page front contents">
+              <div class="">
+                <img id="cover" src="Assets/diary/diary.png" alt="surabhi logo" />
+              </div>
+            </div>
+            <div class="page back">
+
+            </div>
+          </div>
+          <div class="second paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container"></div>
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/surabhi main.jpg" alt="Logo" style="
+            margin-top: 10%;
+            height: 70%;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            transform: scaleX(-1);
+            box-shadow: 0.05px 0.5px 2px black, 0 0 60px #8a4d0f inset;
+          /* filter: url(#wavy2); */
+          " />
+
+            </div>
+          </div>
+          <div class="third paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container2"></div>
+
+              <svg>
+                <filter id="wavy2">
+                  <feTurbulence x="0" y="0" baseFrequency="0.0018" numOctaves="5" seed="1"></feTurbulence>
+                  <feDisplacementMap in="SourceGraphic" scale="20" />
+                </filter>
+              </svg>
+              <svg>
+                <filter id="wavy3">
+                  <feTurbulence x="0" y="0" baseFrequency="0.0018" numOctaves="5" seed="1"></feTurbulence>
+
+                  <feDisplacementMap in="SourceGraphic" scale="20" />
+
+                  <feColorMatrix type="saturate" values="0" />
+                </filter>
+              </svg>
+
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/cinecarnival_poster.png" alt="Logo" style="
+            margin-top: 17%;
+            width: 80%;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            transform: scaleX(-1);
+          " />
+            </div>
+          </div>
+          <div class="fourth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container3"></div>
+
+              <img src="Assets/fest_posters/cinecarnival_team_pic.jpeg" alt="Logo" style="
+            width: 90%;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            filter: url(#wavy3);
+          " />
+
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/raaga2024.png" alt="Logo" style="
+            margin-top: 17%;
+            height: 300px;
+            width: 280px;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            transform: scaleX(-1);
+          " />
+
+
+            </div>
+          </div>
+          <div class="fifth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container4"></div>
+              <img src="Assets/fest_logos/raaga logo and text.jpg" alt="Logo" style="
+            scale: 1;
+            width: 80%;
+            position: relative;
+            filter: url(#wavy2);
+          " />
+            </div>
+            <div class="page back">
+
+
+              <img src="Assets/fest_posters/vastra_shala_poster.jpeg" alt="Logo" style="
+            margin-top: 10%;
+            height: 90%;
+            width: 90%;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            transform: scaleX(-1);
+          " />
+            </div>
+          </div>
+          <div class="sixth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container5">
+              </div>
+              <img src="Assets/fest_posters/vastrashala_stuff.jpeg" alt="Logo" style="
+            margin-top: 10%;
+            justify-content: center; 
+            left:7%;
+            position: relative;     
+            width: 80%;
+            filter: url(#wavy3);
+
+          " />
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/sahithiya_poster.jpg" alt="Logo" style="
+            margin-top: 17%;
+            width: 80%;
+            position: relative;
+            justify-content: center;
+            position: relative;
+            transform: scaleX(-1);
+          " />
+            </div>
+          </div>
+          <div class="seventh paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container6"></div>
+            </div>
+
+            <div class="page back">
+              <img src="/Assets/fest_posters/nrithya_team_pic.jpeg" alt="Nrithya" style="
+            width: 80%;
+            margin-top: 50%;
+            transform: scaleX(-1);
+            position: relative;
+            filter: url(#wavy3);
+
+          " />
+            </div>
+          </div>
+          <div class="eighth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container7"></div>
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/Natayaka_Surabhi.jpg" alt="Logo" style="
+            position: relative;
+            width: 90%;
+            margin-top: 10%;
+            transform: scaleX(-1);    
+            filter: url(#wavy2);
+          " />
+            </div>
+          </div>
+          <div class="ninth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container8"></div>
+            </div>
+            <div class="page back">
+              <img src="Assets/fest_posters/chitrakala_poster.jpeg" alt="Logo" style="
+            position: relative;
+            width: 90%;
+            margin-top: 10%;
+            transform: scaleX(-1);
+            filter: url(#wavy2);
+          " />
+            </div>
+          </div>
+          <div class="tenth paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container9"></div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="eleventh paper" onclick="playPageFlipAudio()">
+            <div class="page front contents">
+              <div id="vara-container10"></div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="twelfth paper">
+            <div class="page last front wow contents">
+              <div id="vara-container11"></div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="side"></div>
+          <div class="bottom"></div>
+          <div class="shadow"></div>
+        </div>
+
+
+
+
+
+        <img class="hide-on-mobile" src="Assets/table_stuff/black pencil_1.png" alt="Hi" style="
+            left: 0%;
+            top: 0%;
+            scale: 1.9;
+            transform: translate(-63%, 64%) rotate(128deg);
+            z-index: -10000 !important;
+            height: 150px;
+            width: 200px;
+            position: relative;
+            pointer-events: none;
+            -webkit-filter: drop-shadow(4.5px 4.5px 0px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(2.2px 2.2px 0px rgba(0, 0, 0, 0.2));
+
+            " />
+
+
+        <img class="hide-on-mobile" src="Assets/table_stuff/upper_pen.png" alt="Hi" style="
+        position: absolute;
+        left: 35%;
+        top: -40%;
+        transform: rotate(-88deg);
+        z-index: 210;
+        width: 7.3%;
+        cursor: pointer; 
+        -webkit-filter: drop-shadow(-4.5px -4.5px 0px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(-4.3px -4.3px 0px rgba(0, 0, 0, 0.2));
+    " onclick="rotatePen('penImage'); playPenMoveAudio();" id="penImage" />
+
+        <script>
+          function rotatePen(imageId) {
+            // Get the image element by id
+            var penImage = document.getElementById(imageId);
+
+            // Get the current rotation angle
+            var currentRotation = getRotationDegrees(penImage.style.transform);
+
+            // Set the new rotation angle to either -92deg or -88deg
+            var newRotation = (currentRotation === -92) ? -88 : -92;
+
+            // Apply the new rotation
+            penImage.style.transform = `rotate(${newRotation}deg)`;
+          }
+
+          // Helper function to extract rotation angle from transform property
+          function getRotationDegrees(transform) {
+            var match = transform.match(/rotate\(([-\d]+)deg\)/);
+            return match ? parseInt(match[1]) : 0;
+          }
+        </script>
+
+        <!-- Sticky Note -->
+        <div class="contaner hide-on-mobile" style="transform: translate(-93%,100%) scaleX(0.7) scaleY(0.8);">
+
+          <div class="sticky-note sticky-note-one">
+            <h3>Goals</h3>
+            <ul class="task-list">
+              <li>
+                <input type="checkbox" id="task1">
+                <label class="checkboxLabel" for="task1"> Read the Diary</label>
+              </li>
+              <li>
+                <input type="checkbox" id="task2">
+                <label class="checkboxLabel" for="task2"> Explore fest events</label>
+              </li>
+              <li>
+                <input type="checkbox" id="task3">
+                <label class="checkboxLabel" for="task3"> Pay for Surabhi</label>
+              </li>
+              <li>
+                <input type="checkbox" id="task4">
+                <label class="checkboxLabel" for="task4"> Register for events after paying</label>
+              </li>
+              <li>
+                <input type="checkbox" id="task5">
+                <label class="checkboxLabel" for="task5"> Get the early bird benefits</label>
+              </li>
+          </div>
+        </div>
+
+        <div id="completePhone">
+          <div id="phone">
+            <div id="screen">
+              <img src="Assets/phone_apps/new-notification.png" alt="notification-bar" style="width: 100%; margin: 0;">
+              <div id="time" style="top: 0; position: absolute; left: 45%;"></div>
+              <div id="batteryPercent" style="top: 0; position: absolute; right: 13%;"></div>
+              <div id="homepage">
+
+                <img src="Assets/phone_apps/surabhi_icon.jpg" alt="Surabhi" style="width: 150px; height: auto;">
+                <div id="homeapps" class="homey">
+                  <Figure id="guide">
+                    <a href="https://1drv.ms/b/s!An-wYQrei0UVhSgCIHTRFwLedUrD?e=OmjrEq" target="blank">
+                      <img class="app" src="./Assets/phone_apps/guidelines.png" alt="Guidlines"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Guide</figcaption>
+                  </Figure>
+                  <Figure id="loginApp">
+                    <img id="loginAPP" class="app" src="./Assets/phone_apps/login_3.jpeg" alt="Guidlines"
+                      onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Login</figcaption>
+                  </Figure>
+                  <Figure id="paymentAPP">
+                    <img id="paymentAPP" class="app" src="./Assets/phone_apps/payments.jpeg" alt="Payment"
+                      onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Payment</figcaption>
+                  </Figure>
+                  <Figure>
+                    <img class="app" id="showTimer" src="./Assets/phone_apps/clocker.png" alt="TIMER"
+                      onclick="playAppClickAudio()">
+                    <figcaption style="color: white; ">Timer</figcaption>
+                  </Figure>
+                  <Figure>
+                    <img class="app" id='surabhigram' src="./Assets/phone_apps/OIG.jpg" alt="surabhigram"
+                      onclick="playAppClickAudio()">
+                    <figcaption style="color: white; ">SurabhiGram</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://klraaga.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/raaga-appcicrle.png" alt="raaga"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Raaga</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://klchitrakala.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/chitrakala_app_logo.png" alt="chitrakala"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Chitrakala</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://klvastrashala24.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/vastra_shala_logo3.jpeg" alt="Vastra Shala"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Vastra Shala</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://nrithya.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/nrithya_app_logo.png" alt="nrithya"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Nrithya</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://klsahitya.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/sahitya_app_logo.png" alt="Sahitya"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Sahitya</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://natayaka.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/natyaka_app_logo.png" alt="Natayaka"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Natayaka</figcaption>
+                  </Figure>
+                  <Figure>
+                    <a href="https://klcinecarnival24.netlify.app/" target="blank">
+                      <img class="app" src="./Assets/phone_apps/cineCarnival_app_logo.png" alt="Cinecarnival"
+                        onclick="playAppClickAudio()">
+                    </a>
+                    <figcaption style="color: white; ">Cinecarnival</figcaption>
+                  </Figure>
+                </div>
+              </div>
+              <!-- <div id="insta"> -->
+              <div id="instad" style="display: none;">
+                <div class="instagram-posts">
+                  <div>
+                    <blockquote class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/p/CyJlS2VuLHq/?igsh=MWoyZ3FiY3Ewb3J6YQ%3D%3D&img_index=1"
+                      data-instgrm-version="13"
+                      style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                      <div style="padding:16px;"> <a
+                          href="https://www.instagram.com/p/CyJlS2VuLHq/?igsh=MWoyZ3FiY3Ewb3J6YQ%3D%3D&img_index=1"
+                          style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                          target="_blank">
+                          <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div
+                              style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0;"></div>
+                          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                              height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                              xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                    </path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></div>
+                          <div style="padding-top: 8px;">
+                            <div
+                              style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                              View this post on Instagram</div>
+                          </div>
+                          <div style="padding: 12.5% 0;"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                            <div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                              </div>
+                            </div>
+                            <div style="margin-left: 8px;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                              </div>
+                            </div>
+                            <div style="margin-left: auto;">
+                              <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                            </div>
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                            </div>
+                          </div>
+                        </a>
+                        <p
+                          style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                          <a href="https://www.instagram.com/p/CUXxMsuFTCr/?utm_source=ig_embed&utm_campaign=loading"
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                            target="_blank">A post shared by Blue Bottle Coffee (@bluebottle)</a>
+                        </p>
+                      </div>
+                    </blockquote>
+                    <script async src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+
+                  <div>
+                    <blockquote class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/p/CoiEyIThQyX/?hl=en&img_index=1"
+                      data-instgrm-version="13"
+                      style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                      <div style="padding:16px;"> <a href="https://www.instagram.com/p/CoiEyIThQyX/?hl=en&img_index=1"
+                          style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                          target="_blank">
+                          <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div
+                              style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0;"></div>
+                          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                              height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                              xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                    </path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></div>
+                          <div style="padding-top: 8px;">
+                            <div
+                              style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                              View this post on Instagram</div>
+                          </div>
+                          <div style="padding: 12.5% 0;"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                            <div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                              </div>
+                            </div>
+                            <div style="margin-left: 8px;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                              </div>
+                            </div>
+                            <div style="margin-left: auto;">
+                              <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                            </div>
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                            </div>
+                          </div>
+                        </a>
+                        <p
+                          style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                          <a href="https://www.instagram.com/p/CUFvMaLMAB0/?utm_source=ig_embed&utm_campaign=loading"
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                            target="_blank">A post shared by Blue Bottle Coffee (@bluebottle)</a>
+                        </p>
+                      </div>
+                    </blockquote>
+                    <script async src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+
+                  <div>
+                    <blockquote class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/p/CyyjQc4rgHF/?img_index=1"
+                      data-instgrm-version="13"
+                      style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                      <div style="padding:16px;"> <a href="https://www.instagram.com/p/CyyjQc4rgHF/?img_index=1"
+                          style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                          target="_blank">
+                          <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div
+                              style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0;"></div>
+                          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                              height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                              xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                    </path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></div>
+                          <div style="padding-top: 8px;">
+                            <div
+                              style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                              View this post on Instagram</div>
+                          </div>
+                          <div style="padding: 12.5% 0;"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                            <div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                              </div>
+                            </div>
+                            <div style="margin-left: 8px;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                              </div>
+                            </div>
+                            <div style="margin-left: auto;">
+                              <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                            </div>
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                            </div>
+                          </div>
+                        </a>
+                        <p
+                          style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                          <a href="https://www.instagram.com/p/CUXxMsuFTCr/?utm_source=ig_embed&utm_campaign=loading"
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                            target="_blank">A post shared by Blue Bottle Coffee (@bluebottle)</a>
+                        </p>
+                      </div>
+                    </blockquote>
+                    <script async src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+
+                  <div>
+                    <blockquote class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/p/C1cXjK5xDE-/" data-instgrm-version="13"
+                      style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                      <div style="padding:16px;"> <a href="https://www.instagram.com/p/C1cXjK5xDE-/"
+                          style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                          target="_blank">
+                          <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div
+                              style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0;"></div>
+                          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                              height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                              xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                    </path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></div>
+                          <div style="padding-top: 8px;">
+                            <div
+                              style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                              View this post on Instagram</div>
+                          </div>
+                          <div style="padding: 12.5% 0;"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                            <div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                              </div>
+                              <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                              </div>
+                            </div>
+                            <div style="margin-left: 8px;">
+                              <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                              </div>
+                            </div>
+                            <div style="margin-left: auto;">
+                              <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                              </div>
+                              <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                              </div>
+                              <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                            </div>
+                            <div
+                              style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                            </div>
+                          </div>
+                        </a>
+                        <p
+                          style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                          <a href="https://www.instagram.com/p/CUFvMaLMAB0/?utm_source=ig_embed&utm_campaign=loading"
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                            target="_blank">A post shared by Blue Bottle Coffee (@bluebottle)</a>
+                        </p>
+                      </div>
+                    </blockquote>
+                    <script async src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timer App HTML -->
+              <script src="Js/countdown.js"></script>
+              <div id="timerpage" class="gradient-background" style="display: none;">
+                <div class="timer-container">
+                  <div id="countdown">
+                    <ul style="list-style: none;">
+                      <li class="timmmy"><span id="days"></span>
+                        <p class="time-des">days</p>
+                      </li>
+                      <li class="timmmy"><span id="hours"></span>
+                        <p class="time-des">hours</p>
+                      </li>
+                      <li class="timmmy"><span id="minutes"></span>
+                        <p class="time-des">minutes</p>
+                      </li>
+                      <li class="timmmy"><span id="seconds"></span>
+                        <p class="time-des">seconds</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Timer App Ends -->
+              
+              <div id="login-page">
+                
+<input type="radio" name="optionScreen" id="SignIn" hidden checked>
+<input type="radio" name="optionScreen" id="SignUp" hidden>
+
+
+      <section>
+        <div id="logo">
+          <img src="/Assets/favicon/surabhi.png" alt="Surabhi Logo" width="80">
+          <!-- <h1 style="">Surabhi</h1> -->
+        </div>
+
+        <nav>
+          <label for="SignIn">Sign In</label>
+          <label for="SignUp">Sign Up</label>
+        </nav>
+
+        <form action="" id="SignInFormData">
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+          <span>
+            <input type="checkbox" id="staySignedIn" checked>
+            <label for="staySignedIn">Stay Signed In</label>
+          </span>
+          <button type="button" title="Sing In">Sign In</button>
+
+          <a id="forgotPassword">Forgot Your Password?</a>
+        </form>
+
+        <form action="" id="SignUpFormData">
+          <input type="text" id="name" placeholder="Full Name">
+          <input type="email" id=email placeholder="E-mail">
+          <input type="password" id="password" placeholder="New Password">
+          <button type="button" title="Sign Up">Sign Up</button>
+        </form>
+
+      </section>
+</div>
+
+              <div id="payment-page">
+                <div id="main-content" style="display: none;">
+                  <div class="selector">
+                    <h1>Plan Selection</h1>
+                    <ul>
+                      <li class="collapsible">
+                        <input type="radio" id="surabhiBasic" name="festOption" value="Surabhi Basic (199)">
+                        <label for="surabhiBasic">Surabhi Basic (199)</label>
+                        <ul class="content">
+                          <li><p></p><label for="surabhiBasic_welcomeKit">Welcome Kit</label></li>
+                  
+                          <li><p></p><label for="surabhiBasic_ID">ID</label></li>
+                        </ul>
+                      </li>
+                      <li class="collapsible">
+                        <input type="radio" id="surabhiMain" name="festOption" value="Surabhi Main (499)">
+                        <label for="surabhiMain">Surabhi Main (499)</label>
+                        <ul class="content">
+                          <li><p></p><label for="surabhiMain_welcomeKit">Welcome Kit</label></li>
+                          <li><p></p><label for="surabhiMain_ID">ID</label></li>
+                          <li><p></p><label for="surabhiMain_certificate">Certificate</label></li>
+                          <li><p></p><label for="surabhiMain_accommodation">Free Accommodation for outside KL Students</label></li>
+                          <li><p></p><label for="Free_Transport_from_Bus_Stand_Railway_Station_and_Airport">Free Transport from Bus Stand, Railway Station, and Airport</label></li>
+                          <li><p></p><label for="surabhiMain_festChoice">1 fest of your choice (choose below)</label></li>
+                        </ul>
+                      </li>
+                      <li class="collapsible">
+                        <input type="radio" id="surabhiPremium" name="festOption" value="Surabhi Premium (999)">
+                        <label for="surabhiPremium">Surabhi Premium (999)</label>
+                        <ul class="content">
+                          <li><p></p><label for="surabhiPremium_welcomeKit">Welcome Kit</label></li>
+                          <li><p></p><label for="surabhiPremium_ID">ID</label></li>
+                          <li><p></p><label for="surabhiPremium_certificate">Certificate</label></li>
+                          <li><p></p><label for="surabhiPremium_accommodation">Free Accommodation for outside KL Students</label></li>
+                          <li><p></p><label for="surabhiPremium_transport">Free Transport from Bus Stand, Railway Station, and Airport</label></li>
+                          <li><p></p><label for="surabhiPremium_allFests">All Fests</label></li>
+                          <li><p></p><label for="surabhiPremium_meetCelebrity">Chance to meet celebrity of choice</label></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="register-next-button"><p>Fest Registration<span>&#x27BD;</span></p></button>
+                </div>
+
+                <div id="fest-selection-page" style="display: none">
+
+                  <div id="fest-selection">
+                    <div class="selector">
+                      <h1>Fest Selection</h1>
+                      <ul>
+                        <li class="collapsible">
+                          <input type="radio" id="Cine-Carnival" name="festOption" value="Cine Carnival">
+                          <label for="Cine-Carnival">Cine Carnival (Short-Film Competitions)</label>
+                          <ul class="content">
+                            <li>
+                              <p></p>
+                              <label for="short-film">Short Film Contest on Sustainable Development Goal (Quality Education, Gender Equality, Clean Water sanitation, Affordable and Clean Energy, Sustainable Cities and communities.)</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="ad-film">Ad-Film Contest : 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="film-poster">Film Poster Contest: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        <li class="collapsible">
+                          <input type="radio" id="Raaga" name="festOption" value="Raaga">
+                          <label for="Raaga">Raaga (Music Competitions)</label>
+                          <ul class="content">
+                            <li>
+                              <p></p>
+                              <label for="battle-of-bands">Battle of Bands: 1st Prize: 15000/- 2nd Prize: 10000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="voice-of-raaga">Voice of Raaga: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="composers-league">Composers League: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="solo-instrumental">Solo instrumental: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="harmony-of-words">Harmony of words: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        <li class="collapsible">
+                          <input type="radio" id="Nritya" name="festOption" value="Nritya">
+                          <label for="Nritya">Nritya (Dance Competitions)</label>
+                          <ul class="content">
+                            <li>
+                              <p></p>
+                              <label for="classical-solo">Classical - Solo: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="classical-group">Classical - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="western-mass-group">Western & Mass - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="cine-beats-solo">Cine Beats - Solo: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="cine-beats-group">Cine Beats - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="street-dance-group">Street Dance - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="thematic-group">Thematic - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="folk-group">Folk - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="hip-hop-urban-solo">Hip-Hop & Urban - Solo: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="hip-hop-urban-group">Hip-Hop & Urban - Group: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="duet">Duet: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        <li class="collapsible">
+                          <input type="radio" id="Natayaka" name="festOption" value="Natayaka">
+                          <label for="Natayaka">Natayaka</label>
+                          <ul class="content">
+                            <li>
+                              <p></p>
+                              <label for="skit">Skit: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="dialogue-dhamaka">Dialogue Dhamaka: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="mono-action">Mono Action: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                            <li>
+                              <p></p>
+                              <label for="mimicry">Mimicry: 1st Prize: 5000/- 2nd Prize: 3000/- 3rd Prize: 2000/-</label>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="payment-next-button"><p>Proceed to checkout<span>&#x27BD;</span></p></div>
+                </div>
+
+                <div id="last-content" style="display: none;">
+                  <div class="selector">
+                    <h1>Events</h1>
+                    <ul>
+                      <li class="collapsible">
+                        <input type="radio" id="last-surabhiBasic" name="festOption" value="Surabhi Basic (199)">
+                        <label for="last-surabhiBasic">Surabhi Basic (199)</label>
+                        <ul class="content">
+                          <li><p></p><label for="last-surabhiBasic_welcomeKit">Welcome Kit</label></li>
+                          <li><p></p><label for="last-surabhiBasic_ID">ID</label></li>
+                        </ul>
+                      </li>
+                      <li class="collapsible">
+                        <input type="radio" id="last-surabhiMain" name="festOption" value="Surabhi Main (499)">
+                        <label for="last-surabhiMain">Surabhi Main (499)</label>
+                        <ul class="content">
+                          <li><p></p><label for="last-surabhiMain_welcomeKit">Welcome Kit</label></li>
+                          <li><p></p><label for="last-surabhiMain_ID">ID</label></li>
+                          <li><p></p><label for="last-surabhiMain_certificate">Certificate</label></li>
+                          <li><p></p><label for="last-surabhiMain_accommodation">Free Accommodation for outside KL Students</label></li>
+                          <li><p></p><label for="last-Free_Transport_from_Bus_Stand_Railway_Station_and_Airport">Free Transport from Bus Stand, Railway Station, and Airport</label></li>
+                          <li><p></p><label for="last-surabhiMain_festChoice">1 fest of your choice (choose below)</label></li>
+                        </ul>
+                      </li>
+                      <li class="collapsible">
+                        <input type="radio" id="last-surabhiPremium" name="festOption" value="Surabhi Premium (999)">
+                        <label for="last-surabhiPremium">Surabhi Premium (999)</label>
+                        <ul class="content">
+                          <li><p></p><label for="last-surabhiPremium_welcomeKit">Welcome Kit</label></li>
+                          <li><p></p><label for="last-surabhiPremium_ID">ID</label></li>
+                          <li><p></p><label for="last-surabhiPremium_certificate">Certificate</label></li>
+                          <li><p></p><label for="last-surabhiPremium_accommodation">Free Accommodation for outside KL Students</label></li>
+                          <li><p></p><label for="last-surabhiPremium_transport">Free Transport from Bus Stand, Railway Station, and Airport</label></li>
+                          <li><p></p><label for="last-surabhiPremium_allFests">All Fests</label></li>
+                          <li><p></p><label for="last-surabhiPremium_meetCelebrity">Chance to meet celebrity of choice</label></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="final-next-button"><p>Finish registration<span>&#x27BD;</span></p></button>
+                </div>
+
+                <div id="qr-code-page" style="display: none;">
+                  <h1 style="margin-left: 5%; margin-top: 5%;">Scan the QR code to pay🤳</h1>
+                  <div class="qr-holder">
+                    <img id="qr-code" src="Assets/phone_apps/surabhi_better_qr.png" alt="qr-code" />
+                    <span style="color: #3897f0; margin-left: 5%;">Your price: </span><span></span>
+                  </div>
+                  <button id="qr-page-button"><p>Fest Registration<span>&#x27BD;</span></p></button>
+                </div>
+
+
+                <!--dog animation coming soon-->
+                
+                <div id="coming-soon-container" style="display: none;">
+                  <h1 style="color: rgba(79, 79, 79, 0.953); font-family:Georgia, 'Times New Roman', Times, serif; font-size: 3.2rem; margin-top: 7rem;">Coming soon...</h1>
+                  <div class="scene">
+                      <img class="car" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/car.svg" alt="" />
+                      <img class="poof" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/poof.svg" alt="" />
+                      <img class="sign" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/sign.svg" alt="" />
+                        <em>LOADING...</em>
+                  </div>
+                </div>
+              </div> 
+              <!--Script for plan selection page-->
+
+            </div>
+            <div id="home" class="hide-on-mobile" onclick="playHomeButtonAudio()"></div>
+            <div id="speaker" class="hide-on-mobile"></div>
+          </div>
+        </div>
+
+      </div>
+      <!--book end-->
+
+
+      <a id="link" class="instructer hide-on-mobile" target="_blank">CLICK THE BOOK TO BEGIN</a>
+      <!-- partial -->
+      <script
+        src="https://rawcdn.githack.com/akzhy/Vara/c55a1b40c15b808cdd4a047de95c905094be87db/src/vara.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="Js/script.js"></script>
+      <script src="/Js/payment-page-handler.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+#login-page input {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+#login-page {
+	font-family: "Arial", "sans-serif";
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #eee;
+}
+
+#login-page ::selection {
+	background: 0;
+}
+
+#login-page {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-content: center;
+	background: #1ed760;
+	overflow-x: hidden;
+}
+
+#login-page section {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	/* border-radius: 10px; */
+	background: #2c2d31;
+	overflow: hidden;
+	position: relative;
+}
+
+#login-page #logo {
+	/* justify-content: center; */
+	/* display: flex; */
+	/* align-items: center; */
+	margin: 2rem;
+}
+
+#login-page nav {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#login-page nav label {
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#login-page nav label:first-child {
+	margin-right: 6%;
+}
+
+#login-page form {
+	position: absolute;
+	/* min-width: 320px; */
+	width: 80%;
+
+	/* shifting logic is here */
+	margin-left: 140%;
+	/* replaced transform with margin left.
+	this makes it so everything is relative to the container */
+	/* transform: translatex(140%); */
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s;
+	/* margin-left: -2rem; */
+	/* padding-right: 6rem; */
+}
+
+#login-page #SignIn:checked~section #SignInFormData,
+#login-page #SignUp:checked~section #SignUpFormData {
+	/* shifting logic is here too */
+	margin-left: 5%;
+	/* transform: translatex(15%); */
+}
+
+#login-page #SignIn:checked~section nav label:first-child,
+#login-page #SignUp:checked~section nav label:last-child {
+	margin-bottom: -2px;
+	border-bottom: 2px solid #1ed760;
+}
+
+#login-page input,
+#login-page button {
+	color: #111;
+	border-radius: 50px;
+	padding: 5% 10%;
+	margin-bottom: 5%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#login-page button {
+	background: #1ed760;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#login-page form span {
+	/* margin-left: 20px; */
+	display: inline;
+}
+
+#login-page form span label {
+	cursor: pointer;
+	font-size: 14px;
+	/* text-transform: lowercase; */
+}
+
+#login-page input[type="checkbox"] {
+	cursor: pointer;
+	accent-color: #1ed760;
+	/* #3498db; */
+}
+
+#login-page a {
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+	opacity: 0.6;
+}
+
+#login-page a:hover {
+	opacity: 1;
+}

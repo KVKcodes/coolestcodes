@@ -12,7 +12,8 @@
 # Misc
 - [added a small change in code for phoner.js to hide the login page initially](./Js/phoner.js#L34)  
 
-
+# Some changes
+- [gave required and put autocomplete on](./Js/phoner.js#L834)  
 <!-- Nafi changes -->
 
 

@@ -6,7 +6,6 @@
   <title>KL Surabhi 2024</title>
   <link rel="stylesheet" href="Css/phone/phone.css" />
   <link rel="stylesheet" href="./Css/style.css" />
-  <link rel="stylesheet" href="Css/phone/screener.css">
   <link rel="stylesheet" href="Css/table/stickynote_nohover.css" />
   <link rel="stylesheet" href="Css/phone/login_app.css" />
   <link rel="stylesheet" href="Css/phone/payment-dog-animation.css">
@@ -841,9 +840,8 @@
                       </nav>
 
                       <form action="" id="SignInFormData">
-                         <input type="text" id="username" placeholder="Username">
-                        <input type="text" id="username" placeholder="Username">
-                        <input type="password" id="password" placeholder="Password">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <input type="password" id="passwordSignIn" placeholder="Password" autocomplete="on" required>
                         <span id="staySpan">
                           <input type="checkbox" id="staySignedIn" checked>
                           <label for="staySignedIn">Stay Signed In</label>
@@ -857,7 +855,7 @@
                         <input type="text" id="institutionName" placeholder="Name Of Your Institution" required>
                         <input type="text" id="fullname" placeholder="Full Name" required>
                         <input type="text" id="username" placeholder="Enter Username" required>
-                        <input type="password" id=password placeholder="Set Password" required>
+                        <input type="password" id="passwordSignUp" placeholder="Set Password" required autocomplete="off">
                         <input type="number" id="idNum" placeholder="Enter ID Number" required>
                         <span style="margin-bottom: 10px;">
                           <label for="gender">Gender:</label>
@@ -935,7 +933,7 @@
                       </li>
                     </ul>
                   </div>
-                  <button class="payButton" id="register-next-button"><p>Fest Registration&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></button>
+                  <button class="payButton" id="register-next-button"><p>Select Fest&nbsp;&nbsp;<!--<span>&#8658;</span>--></p></button>
                 </div>
 
                 <div id="fest-selection-page" style="display: none">
